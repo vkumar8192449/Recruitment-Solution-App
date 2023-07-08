@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Recruit Ease</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="navleft">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="images/recruitease-logo.png"
+            alt="website-logo"
+            width="125px"
+        /></a>
+      </div>
+      <div>
+        <a class="cansearch" href="candidatesearch.html"
+          >Candidate Search<img src="images/search.svg" alt="" width="20px"
+        /></a>
+      </div>
+    </header>
+    <div class="form-container">
+      <div class="form-header">
+        <h2>Register</h2>
+        <p>Join us and start finding the best talent for your company.</p>
+      </div>
+
+      <form class="fancy-form">
+        <div class="form-group">
+          <label for="name">Company's Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Company's Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+      </form>
+      <button type="submit" class="btn" onclick="register()">Submit</button>
+
+      <div class="form-footer">
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <ul class="footer-menu">
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+        <p class="footer-text">
+          &copy; 2023 Vinay Kumar ❤️ All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <div id="errorPopup" class="error-popup">
+      <p id="errmsg" class="error-popup-message">An error occurred!</p>
+    </div>
+    <script src="app/register.js"></script>
+  </body>
+</html>
